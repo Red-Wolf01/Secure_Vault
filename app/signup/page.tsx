@@ -1,11 +1,7 @@
-import { LoginForm } from "@/components/login-form"
-import { ShieldCheck } from 'lucide-react'
-import { redirect } from 'next/navigation'
+import { SignupForm } from "@/components/signup-form"
+import { ShieldCheck } from "lucide-react"
 
-export default function HomePage() {
-  // Redirect to vault (middleware will handle auth check)
-  redirect('/vault')
-
+export default function SignupPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-primary/5 p-4">
       <div className="w-full max-w-md space-y-8">
@@ -15,12 +11,12 @@ export default function HomePage() {
               <ShieldCheck className="h-9 w-9 text-primary" />
             </div>
           </div>
-          <h1 className="text-3xl font-bold tracking-tight text-balance">Secure Password Manager</h1>
+          <h1 className="text-3xl font-bold tracking-tight text-balance">Create Your Account</h1>
           <p className="text-sm text-muted-foreground text-balance">
-            Your master password is never stored on our servers
+            Start securing your passwords with end-to-end encryption
           </p>
         </div>
-        <LoginForm />
+        <SignupForm />
       </div>
     </div>
   )
