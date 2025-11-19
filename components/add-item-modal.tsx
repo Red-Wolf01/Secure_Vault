@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState, useEffect } from "react"
-import type { VaultItem } from "@/components/vault-dashboard"
+import type { VaultItem } from "@/types"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
